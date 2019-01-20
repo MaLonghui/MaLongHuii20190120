@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:id="@+id/goods_check"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/goods_img"
+        android:layout_width="100dp"
+        android:layout_centerVertical="true"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@id/goods_check"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/goods_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/goods_img"
+        android:layout_toRightOf="@id/goods_img"
+        android:maxLines="2"
+        android:padding="10dp"
+        android:text="qwer"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/goods_img"
+        android:layout_toRightOf="@id/goods_img">
+
+        <TextView
+            android:id="@+id/goods_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:padding="10dp"
+            android:text="aaa"
+            android:textColor="#f00"
+            android:textSize="20sp" />
+       <com.bwie.malonghuii2019120.CustomView
+           android:id="@+id/custom_view"
+           android:layout_width="wrap_content"
+           android:layout_alignBottom="@id/goods_price"
+           android:layout_alignParentRight="true"
+           android:layout_height="wrap_content"></com.bwie.malonghuii2019120.CustomView>
+    </RelativeLayout>
+
+</RelativeLayout>
